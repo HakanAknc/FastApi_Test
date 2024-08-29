@@ -1,10 +1,10 @@
 # import psycopg2
 
-# db = psycopg2.connect(user = "postgres",
-#                       password = "12345",
-#                       host = "127.0.0.1",
-#                       port = "5432",
-#                       database = "postgres")
+# db = psycopg2.connect(user = "",
+#                       password = "",
+#                       host = "",
+#                       port = "",
+#                       database = "")
 
 
 # imlec = db.cursor()
