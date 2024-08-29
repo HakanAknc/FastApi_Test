@@ -6,7 +6,7 @@ from sqlalchemy.orm import sessionmaker, relationship
 import uuid
 
 # Veritabanı bağlantı bilgileri
-DATABASE_URL = "postgresql://postgres:12345@127.0.0.1:5432/db_car"
+DATABASE_URL = ""
 
 # SQLAlchemy motorunu ve oturumu ayarlama
 engine = create_engine(DATABASE_URL)
