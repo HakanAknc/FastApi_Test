@@ -5,7 +5,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, Session
 
 # Veritabanı bağlantı bilgileri
-DATABASE_URL = "postgresql://postgres:12345@127.0.0.1:5432/Car_db"
+DATABASE_URL = ""
 
 # SQLAlchemy motorunu ve oturumu ayarlama
 engine = create_engine(DATABASE_URL)
