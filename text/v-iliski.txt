@@ -1,0 +1,70 @@
+Tablolar arasındaki ilişki;
+1 -) One to One (1 - 1)
+2 -) One to Many (1 - n)
+3 -) Mony to Many (n - n)
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+1 -) One to One (1 - 1)
+Bir tablodaki her bir kayıt, başka bir tablodaki tek bir kayda bağlanır.
+
+Örnek:
+
+Kimlik Bilgileri tablosunda her kişinin kimlik numarası ve adı var.
+Pasaport Bilgileri tablosunda da her kişinin kimlik numarası ve pasaport numarası var.
+Burada, her kişi yalnızca bir pasaport alabileceği için, Kimlik Bilgileri ile Pasaport Bilgileri arasında bire bir ilişki vardır.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+2 -) One to Many (1 - n)
+Bir tablodaki bir kayıt, başka bir tablodaki birden fazla kayıtla, ve tersi de geçerli olacak şekilde ilişkilendirilebilir.
+
+Örnek:
+
+Yazarlar tablosunda bir yazarın adı var.
+Kitaplar tablosunda ise her kitabın adı ve hangi yazar tarafından yazıldığı bilgisi var.
+Bir yazar birçok kitap yazabilir, yani bir yazar birden fazla kitaba sahip olabilir. 
+Bu durumda, Yazarlar ve Kitaplar arasında bire çok ilişki vardır.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+3 -) Many to Many (n - n)
+Bir tablodaki bir kayıt, başka bir tablodaki birden fazla kayıtla, ve tersi de geçerli olacak şekilde ilişkilendirilebilir.
+Bu ilişki türünde, bir tablodaki bir satır, başka bir tablodaki birçok satırla ilişkilidir, ve aynı zamanda tersi de geçerlidir.
+
+Örnek:
+
+Öğrenciler tablosunda her öğrencinin adı var.
+Dersler tablosunda ise her dersin adı var.
+Bir öğrenci birden fazla ders alabilir, ve bir ders birden fazla öğrenci tarafından alınabilir. 
+Bu durumda, Öğrenciler ve Dersler arasında çoktan çoğa ilişki vardır.
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+
+CAR PROJESİ
+Araba markaları ve araba serileri arasındaki ilişki genellikle bire çok (one-to-many) ilişki olur.
+
+Örnek:
+Araba Markaları tablosunda her araba markasının (örneğin, "Toyota", "BMW", "Mercedes") adı bulunur.
+Araba Serileri tablosunda ise her serinin adı (örneğin, "Corolla", "Camry", "X5") ve hangi markaya ait olduğu bilgisi yer alır.
+Bire Çok İlişki:
+Bu durumda, her marka birden fazla seriye sahip olabilir:
+
+Toyota markasının birçok farklı serisi vardır: Corolla, Camry, Prius vb.
+BMW markasının da birçok farklı serisi vardır: 3 Serisi, 5 Serisi, X5 vb.
+Bu örnekte, Araba Markaları ve Araba Serileri arasında bire çok ilişkisi vardır. 
+Bir markanın birden fazla modeli olabilir, ancak bir model yalnızca bir markaya aittir.
+
+Veritabanında Bu İlişki Nasıl Kurulur?
+Araba Markaları tablosu:
+
+id (Birincil anahtar, Primary Key)
+marka_adi (Örneğin, "Toyota", "BMW")
+Araba Serileri tablosu:
+
+id (Birincil anahtar, Primary Key)
+seri_adi (Örneğin, "Corolla", "X5")
+marka_id (Yabancı anahtar, Foreign Key - Araba tablosundaki id ile ilişkilidir)

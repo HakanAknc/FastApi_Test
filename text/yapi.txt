@@ -1,0 +1,6 @@
+View yapısı nedir;
+View yapısı, SQL veritabanları için önemli bir özelliktir. 
+Çünkü, veritabanındaki verileri daha düzenli ve anlaşılır bir şekilde organize etmenize olanak tanır. 
+Örneğin, veritabanınızda çok sayıda tablo ve veri var ve bunları kullanmak için sürekli olarak uzun ve karmaşık sorgular 
+yazmak zorunda kalıyorsunuz. Bu durumda, View yapısını kullanarak bu verileri daha kolay erişebilir hale getirebilirsiniz.
+
